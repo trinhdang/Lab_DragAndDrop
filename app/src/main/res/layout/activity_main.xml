@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--Add top container layout-->
+    <LinearLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#e6c23f"
+        android:tag="top_container">
+        <!--Add the first ImageView: soccer ball-->
+        <ImageView
+            android:id="@+id/soccerBall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:src="@drawable/soccer_ball" />
+        <!--Add the second ImageView: rugby ball-->
+        <ImageView
+            android:id="@+id/rugbyBall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:src="@drawable/rugby_ball" />
+        <!--Add the third ImageView: tennis ball-->
+        <ImageView
+            android:id="@+id/tennisBall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:src="@drawable/tennis_ball" />
+    </LinearLayout>
+
+    <!--Add a bottom container layout-->
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="0.5"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:background="#8a38c1"
+        android:tag="bottom_container">
+        <!--Add an ImageView: display the tennis racket-->
+        <ImageView
+            android:id="@+id/tennisRacket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/tennis_racket" />
+    </LinearLayout>
+</LinearLayout>
